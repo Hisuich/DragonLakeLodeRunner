@@ -39,7 +39,7 @@ void EnemyCollision::CollisionProcess(float delta,int index, int second)
 					haveGold = false;
 				}
 				gameObjects->SetState(index, GameObjectState::Trapped);
-				enemyVelocity.y = enemyVelocity.y > 0 ? 0 : enemyVelocity.y;
+				//enemyVelocity.y = enemyVelocity.y > 0 ? 0 : enemyVelocity.y;
 			}
 		}
 		else if (gameObjects->GetStateByIndex(second) == GameObjectState::Object &&
@@ -59,7 +59,7 @@ void EnemyCollision::CollisionProcess(float delta,int index, int second)
 		secondType == GameObjectType::Trapdoor)
 	{
 		//enemyPos.y -= enemyVelocity.y * delta;
-		enemyVelocity.y = enemyVelocity.y > 0 ? 0 : enemyVelocity.y;
+		//enemyVelocity.y = enemyVelocity.y > 0 ? 0 : enemyVelocity.y;
 	}
 
 	if (secondType == GameObjectType::Gold && !haveGold)

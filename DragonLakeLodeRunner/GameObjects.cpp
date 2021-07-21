@@ -90,7 +90,6 @@ void GameObjects::Update(float deltaTime)
                 states[i] = GameObjectState::Fall;
             else
             {
-                //velocities[i].x = 0;
                 velocities[i].y = 30;
             }
         }
@@ -185,6 +184,7 @@ void GameObjects::SetSprite(int index, Sprite* sprite)
 {
     if (HaveIndex(index))
     {
+        destroySprite(sprites[index]);
         sprites[index] = sprite;
     }
 }
