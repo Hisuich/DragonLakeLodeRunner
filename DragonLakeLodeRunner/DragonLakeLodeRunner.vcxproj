@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b8c5a6c0-c7a7-4199-8e35-517d334c1049}</ProjectGuid>
+    <RootNamespace>DragonLakeLodeRunner</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib\FrameworkRelease_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>;$(SolutionDir)lib\FrameworkDebug_;$(SolutionDir)lib\FrameworkDebug_x64.lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>;$(SolutionDir)lib\FrameworkDebug_;$(SolutionDir)lib\FrameworkDebug_x64.lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>;$(SolutionDir)lib\FrameworkDebug_;$(SolutionDir)lib\FrameworkDebug_x64.lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib\FrameworkRelease_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AddModuleNamesToAssembly>$(SolutionDir)*.dll;%(AddModuleNamesToAssembly)</AddModuleNamesToAssembly>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BulletCollision.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Collisions.h" />
+    <ClInclude Include="Controllers.h" />
+    <ClInclude Include="DestructFloorController.h" />
+    <ClInclude Include="EndLevelSpawner.h" />
+    <ClInclude Include="EnemyCollision.h" />
+    <ClInclude Include="EnemyController.h" />
+    <ClInclude Include="EnemySpawner.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObjects.h" />
+    <ClInclude Include="GameObjectState.h" />
+    <ClInclude Include="GameObjectType.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="HeroCollision.h" />
+    <ClInclude Include="HeroController.h" />
+    <ClInclude Include="HeroSpawner.h" />
+    <ClInclude Include="MainFramework.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MapHelper.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Spawner.h" />
+    <ClInclude Include="Spawners.h" />
+    <ClInclude Include="UnitCollision.h" />
+    <ClInclude Include="UnitController.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector2Int.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FrameworkRelease_x64.dll" />
+    <None Include="libjpeg-9.dll" />
+    <None Include="libpng16-16.dll" />
+    <None Include="SDL2.dll" />
+    <None Include="SDL2_image.dll" />
+    <None Include="zlib1.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="FrameworkRelease_x64.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BulletCollision.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Collisions.cpp" />
+    <ClCompile Include="Controllers.cpp" />
+    <ClCompile Include="DestructFloorController.cpp" />
+    <ClCompile Include="EndLevelSpawner.cpp" />
+    <ClCompile Include="EnemyCollision.cpp" />
+    <ClCompile Include="EnemyController.cpp" />
+    <ClCompile Include="EnemySpawner.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameObjects.cpp" />
+    <ClCompile Include="HeroCollision.cpp" />
+    <ClCompile Include="HeroController.cpp" />
+    <ClCompile Include="HeroSpawner.cpp" />
+    <ClCompile Include="MainFramework.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MapHelper.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="Spawner.cpp" />
+    <ClCompile Include="Spawners.cpp" />
+    <ClCompile Include="UnitCollision.cpp" />
+    <ClCompile Include="UnitController.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector2Int.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DragonLakeLodeRunner.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\enemy_fall_1.png" />
+    <Image Include="data\enemy_fall_2.png" />
+    <Image Include="data\enemy_fall_3.png" />
+    <Image Include="data\enemy_fall_4.png" />
+    <Image Include="data\enemy_ladder_1.png" />
+    <Image Include="data\enemy_ladder_2.png" />
+    <Image Include="data\enemy_ladder_3.png" />
+    <Image Include="data\enemy_ladder_4.png" />
+    <Image Include="data\enemy_left_1.png" />
+    <Image Include="data\enemy_left_2.png" />
+    <Image Include="data\enemy_left_3.png" />
+    <Image Include="data\enemy_left_4.png" />
+    <Image Include="data\enemy_right_1.png" />
+    <Image Include="data\enemy_right_2.png" />
+    <Image Include="data\enemy_right_3.png" />
+    <Image Include="data\enemy_right_4.png" />
+    <Image Include="data\floor_0.png" />
+    <Image Include="data\floor_1.png" />
+    <Image Include="data\floor_2.png" />
+    <Image Include="data\floor_3.png" />
+    <Image Include="data\floor_4.png" />
+    <Image Include="data\floor_5.png" />
+    <Image Include="data\floor_restore_0.png" />
+    <Image Include="data\floor_restore_1.png" />
+    <Image Include="data\floor_restore_2.png" />
+    <Image Include="data\floor_restore_3.png" />
+    <Image Include="data\floor_restore_4.png" />
+    <Image Include="data\floor_restore_5.png" />
+    <Image Include="data\gold_0.png" />
+    <Image Include="data\gold_1.png" />
+    <Image Include="data\gold_2.png" />
+    <Image Include="data\hero_death_1.png" />
+    <Image Include="data\hero_death_2.png" />
+    <Image Include="data\hero_death_3.png" />
+    <Image Include="data\hero_death_4.png" />
+    <Image Include="data\hero_death_5.png" />
+    <Image Include="data\hero_death_6.png" />
+    <Image Include="data\hero_death_7.png" />
+    <Image Include="data\hero_death_8.png" />
+    <Image Include="data\hero_destroy_left_1.png" />
+    <Image Include="data\hero_destroy_left_2.png" />
+    <Image Include="data\hero_destroy_right_1.png" />
+    <Image Include="data\hero_destroy_right_2.png" />
+    <Image Include="data\hero_fall_1.png" />
+    <Image Include="data\hero_fall_2.png" />
+    <Image Include="data\hero_fall_3.png" />
+    <Image Include="data\hero_fall_4.png" />
+    <Image Include="data\hero_ladder_1.png" />
+    <Image Include="data\hero_ladder_2.png" />
+    <Image Include="data\hero_ladder_3.png" />
+    <Image Include="data\hero_ladder_4.png" />
+    <Image Include="data\hero_run_left_1.png" />
+    <Image Include="data\hero_run_left_2.png" />
+    <Image Include="data\hero_run_left_3.png" />
+    <Image Include="data\hero_run_left_4.png" />
+    <Image Include="data\hero_run_right_1.png" />
+    <Image Include="data\hero_run_right_2.png" />
+    <Image Include="data\hero_run_right_3.png" />
+    <Image Include="data\hero_run_right_4.png" />
+    <Image Include="data\ladder_0.png" />
+    <Image Include="data\ladder_1.png" />
+    <Image Include="data\ladder_2.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

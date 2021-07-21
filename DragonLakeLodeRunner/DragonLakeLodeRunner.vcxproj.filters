@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Logic">
+      <UniqueIdentifier>{d95d3bf8-7ec1-4fef-9453-81cc57bcdb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Logic">
+      <UniqueIdentifier>{33b4c138-7c49-4c22-985a-7c76b64ea64f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\libs">
+      <UniqueIdentifier>{7315a7f8-219a-45d5-a484-b34dd3427f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\dlls">
+      <UniqueIdentifier>{959f6738-9c88-4634-9ac3-9471f532edff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\enum">
+      <UniqueIdentifier>{7b15020c-e1c6-4e55-b9f3-0f86236427b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Collisions">
+      <UniqueIdentifier>{9d755898-faba-4638-88a0-546614ded8fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Controllers">
+      <UniqueIdentifier>{abf8dd90-f0a2-4128-a89c-cd202b72acf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Collisions">
+      <UniqueIdentifier>{358d2fd3-6295-41fa-a2c8-7734af71025e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Controllers">
+      <UniqueIdentifier>{5b0e73e4-a2ea-482a-b7ce-08a47885c0c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\data">
+      <UniqueIdentifier>{d79adfdc-3c75-4ed4-9e6c-8a7f8c7c7929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Spawners">
+      <UniqueIdentifier>{5f1b0d80-4620-48a9-995c-52612929be35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Spawners">
+      <UniqueIdentifier>{23e95a53-cf81-4a7a-bc45-65bc22176341}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Framework.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>Файлы заголовков\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2Int.h">
+      <Filter>Файлы заголовков\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFramework.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectType.h">
+      <Filter>Файлы заголовков\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Файлы заголовков\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="MapHelper.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Collisions.h">
+      <Filter>Файлы заголовков\Collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="Controllers.h">
+      <Filter>Файлы заголовков\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitController.h">
+      <Filter>Файлы заголовков\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitCollision.h">
+      <Filter>Файлы заголовков\Collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroController.h">
+      <Filter>Файлы заголовков\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroCollision.h">
+      <Filter>Файлы заголовков\Collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyCollision.h">
+      <Filter>Файлы заголовков\Collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyController.h">
+      <Filter>Файлы заголовков\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroSpawner.h">
+      <Filter>Файлы заголовков\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySpawner.h">
+      <Filter>Файлы заголовков\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Файлы заголовков\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="EndLevelSpawner.h">
+      <Filter>Файлы заголовков\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawners.h">
+      <Filter>Файлы заголовков\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectState.h">
+      <Filter>Файлы заголовков\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletCollision.h">
+      <Filter>Файлы заголовков\Collisions</Filter>
+    </ClInclude>
+    <ClInclude Include="DestructFloorController.h">
+      <Filter>Файлы заголовков\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zlib1.dll">
+      <Filter>Исходные файлы\dlls</Filter>
+    </None>
+    <None Include="SDL2_image.dll">
+      <Filter>Исходные файлы\dlls</Filter>
+    </None>
+    <None Include="SDL2.dll">
+      <Filter>Исходные файлы\dlls</Filter>
+    </None>
+    <None Include="libpng16-16.dll">
+      <Filter>Исходные файлы\dlls</Filter>
+    </None>
+    <None Include="libjpeg-9.dll">
+      <Filter>Исходные файлы\dlls</Filter>
+    </None>
+    <None Include="FrameworkRelease_x64.dll">
+      <Filter>Исходные файлы\dlls</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>Исходные файлы\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2Int.cpp">
+      <Filter>Исходные файлы\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFramework.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjects.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="MapHelper.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Collisions.cpp">
+      <Filter>Исходные файлы\Collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="Controllers.cpp">
+      <Filter>Исходные файлы\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitController.cpp">
+      <Filter>Исходные файлы\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitCollision.cpp">
+      <Filter>Исходные файлы\Collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroController.cpp">
+      <Filter>Исходные файлы\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroCollision.cpp">
+      <Filter>Исходные файлы\Collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyCollision.cpp">
+      <Filter>Исходные файлы\Collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyController.cpp">
+      <Filter>Исходные файлы\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Исходные файлы\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroSpawner.cpp">
+      <Filter>Исходные файлы\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySpawner.cpp">
+      <Filter>Исходные файлы\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="EndLevelSpawner.cpp">
+      <Filter>Исходные файлы\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawners.cpp">
+      <Filter>Исходные файлы\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletCollision.cpp">
+      <Filter>Исходные файлы\Collisions</Filter>
+    </ClCompile>
+    <ClCompile Include="DestructFloorController.cpp">
+      <Filter>Исходные файлы\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Options.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="FrameworkRelease_x64.lib">
+      <Filter>Исходные файлы\libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="README.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DragonLakeLodeRunner.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="data\enemy_fall_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_fall_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_fall_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_fall_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_ladder_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_ladder_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_ladder_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_ladder_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_left_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_left_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_left_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_left_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_right_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_right_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_right_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\enemy_right_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_0.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_5.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_restore_0.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_restore_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_restore_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_restore_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_restore_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\floor_restore_5.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\gold_0.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\gold_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\gold_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_5.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_6.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_7.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_death_8.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_destroy_left_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_destroy_left_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_destroy_right_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_destroy_right_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_fall_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_fall_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_fall_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_fall_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_ladder_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_ladder_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_ladder_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_ladder_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_left_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_left_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_left_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_left_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_right_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_right_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_right_3.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\hero_run_right_4.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\ladder_0.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\ladder_1.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+    <Image Include="data\ladder_2.png">
+      <Filter>Исходные файлы\data</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
